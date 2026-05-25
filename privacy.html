@@ -37,13 +37,13 @@
     <section class="privacy-highlight" aria-label="Resumo para revisão">
       <h2>Resumo para a equipe de revisão da Apple</h2>
       <ul>
-        <li><strong>Não coletamos dados pessoais</strong> — sem conta, sem login, sem e-mail no app, sem identificação do usuário.</li>
-        <li><strong>Sem rastreamento</strong> — não usamos IDFA, não rastreamos entre apps ou sites e não vendemos dados.</li>
-        <li><strong>Sem anúncios</strong> e <strong>sem compras dentro do app</strong> na versão publicada nesta política.</li>
-        <li><strong>Progresso apenas no dispositivo</strong> — preferências e fase salvas localmente; nada é enviado a servidores nossos.</li>
-        <li><strong>Sem serviços de terceiros que coletem dados</strong> (analytics, redes sociais, SDKs de publicidade, etc.).</li>
-        <li><strong>Classificação etária recomendada: 4+</strong> — jogo de palavras, fantasia leve, sem conteúdo adulto, apostas ou violência realista.</li>
-        <li><strong>Arte e áudio originais ou de uso livre</strong> — sem personagens, marcas ou obras de terceiros protegidas por direitos autorais.</li>
+        <li><strong>Sem dados pessoais identificáveis</strong> — sem conta, sem login, sem pedir nome, e-mail ou telefone no app.</li>
+        <li><strong>Firebase (Google)</strong> — analytics e diagnóstico anônimos (crashes, desempenho, eventos de jogo) para corrigir erros e melhorar o app; não vendemos esses dados.</li>
+        <li><strong>Sem anúncios</strong> e <strong>sem rastreamento entre apps</strong> (sem IDFA para publicidade).</li>
+        <li><strong>Compras no app (IAP)</strong> — moedas virtuais para dicas e desbloqueio de personagens; pagamento processado pela Apple.</li>
+        <li><strong>Progresso de jogo no dispositivo</strong> — fases e preferências salvas localmente; eventos agregados podem ir ao Firebase.</li>
+        <li><strong>Classificação etária recomendada: 4+</strong> — jogo de palavras, fantasia leve; compras opcionais via App Store.</li>
+        <li><strong>Arte e áudio originais ou de uso livre</strong> — sem personagens ou marcas de terceiros protegidas por direitos autorais.</li>
         <li><strong>Contato do desenvolvedor:</strong> <a href="mailto:scrumbledada@gmail.com">scrumbledada@gmail.com</a></li>
       </ul>
     </section>
@@ -52,16 +52,16 @@
       <article>
         <h3>English summary</h3>
         <p>
-          Scrumble is an offline-friendly word game. We do not collect personal data, require accounts,
-          show ads, or use third-party analytics. Progress stays on your device. Recommended age rating: 4+.
-          All art and audio are original or royalty-free. Contact: scrumbledada@gmail.com
+          Scrumble does not require accounts or collect personal identifiers. We use Firebase Analytics
+          and Crashlytics for anonymous crashes and gameplay improvements. Optional in-app purchases:
+          coins for hints and character unlocks (Apple billing). No ads. Age rating: 4+. Contact: scrumbledada@gmail.com
         </p>
       </article>
       <article>
         <h3>Résumé en français</h3>
         <p>
-          Scrumble est un jeu de mots. Aucune donnée personnelle, compte, publicité ni analytics tiers.
-          La progression reste sur l’appareil. Classification recommandée : 4+. Arts et sons originaux ou libres de droits.
+          Scrumble n’exige pas de compte ni de données personnelles. Firebase (analytics et crashes) pour
+          améliorer le jeu. Achats intégrés : pièces pour indices et personnages (facturation Apple). Pas de pub. 4+.
           Contact : scrumbledada@gmail.com
         </p>
       </article>
@@ -75,19 +75,39 @@
       <a href="mailto:scrumbledada@gmail.com">scrumbledada@gmail.com</a>
     </p>
 
-    <h3>1.2 O que não fazemos</h3>
+    <h3>1.2 O que não coletamos nem fazemos</h3>
     <p>O Scrumble <strong>não</strong>:</p>
     <ul>
-      <li>coleta nome, e-mail, telefone, endereço ou qualquer dado que identifique você;</li>
-      <li>exige criação de conta ou login (Apple, Google, Facebook, etc.);</li>
+      <li>pede ou armazena nome, e-mail, telefone, endereço ou perfil que identifique você;</li>
+      <li>exige criação de conta ou login (Apple ID no app, Google, Facebook, etc.);</li>
       <li>acessa contatos, fotos, câmera, microfone, localização, calendário, Bluetooth ou Saúde;</li>
-      <li>envia seus dados a servidores nossos para armazenamento na nuvem;</li>
-      <li>usa publicidade, remarketing ou rastreamento entre aplicativos (incluindo IDFA);</li>
-      <li>vende ou aluga informações a terceiros;</li>
-      <li>incorpora SDKs de analytics, crash reporting ou redes sociais que coletem dados do usuário.</li>
+      <li>exibe publicidade ou usa rastreamento entre aplicativos para anúncios (incluindo IDFA);</li>
+      <li>vende ou aluga dados a terceiros.</li>
     </ul>
 
-    <h3>1.3 O que fica apenas no seu dispositivo</h3>
+    <h3>1.3 Dados coletados via Firebase (Google)</h3>
+    <p>
+      O aplicativo usa serviços do <strong>Google Firebase</strong> (por exemplo Analytics e Crashlytics)
+      para entender falhas, desempenho e uso agregado do jogo — <strong>não</strong> para identificar quem você é.
+      Podem ser registrados, de forma anônima ou pseudônima:
+    </p>
+    <ul>
+      <li>relatórios de crash e erros técnicos;</li>
+      <li>modelo do dispositivo, versão do iOS e versão do app;</li>
+      <li>identificadores anônimos gerados pelo Firebase (ex.: ID de instalação);</li>
+      <li>eventos de jogo agregados (sessões, fases iniciadas/concluídas, reinícios, desbloqueios);</li>
+      <li>eventos relacionados à economia do jogo (ex.: uso de moedas, compras concluídas — sem dados de cartão).</li>
+    </ul>
+    <p>
+      O tratamento segue também a
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">política de privacidade do Google</a>.
+      Usamos essas informações apenas para corrigir bugs, melhorar fases e equilibrar o jogo.
+    </p>
+    <p>
+      <strong>Este site de divulgação</strong> (páginas estáticas) não executa Firebase; apenas o app iOS envia esses dados.
+    </p>
+
+    <h3>1.4 O que fica no seu dispositivo</h3>
     <p>
       Para o jogo funcionar, o app pode guardar <strong>localmente</strong> (armazenamento do aplicativo no iPhone/iPad),
       sem envio à internet:
@@ -95,33 +115,35 @@
     <ul>
       <li>progresso de fases e mundos;</li>
       <li>personagem selecionado e desbloqueios;</li>
+      <li>saldo de moedas (incluindo moedas obtidas por compra no app);</li>
       <li>preferências de idioma e configurações de jogo;</li>
-      <li>estatísticas de partida usadas só na tela do jogo (ex.: pontuação da sessão).</li>
+      <li>pontuação e estatísticas da sessão exibidas no jogo.</li>
     </ul>
     <p>
       Esses dados pertencem ao app no seu aparelho. Eles são apagados se você desinstalar o Scrumble
       ou limpar os dados do app em Ajustes → Geral → Armazenamento do iPhone.
     </p>
 
-    <h3>1.4 Dados que a Apple pode processar (fora do nosso controle)</h3>
+    <h3>1.5 Dados que a Apple processa (compras e loja)</h3>
     <p>
-      Ao baixar ou atualizar pela App Store, a <strong>Apple</strong> pode tratar dados conforme a política dela
-      (conta Apple, faturamento da loja, etc.). Isso não é controlado pelo desenvolvedor do Scrumble.
+      Compras no app são feitas pela <strong>App Store</strong>. A Apple processa pagamento, fatura e reembolsos
+      conforme os termos dela. O Scrumble recebe apenas a confirmação da compra para entregar moedas ou personagens no jogo.
       Consulte a <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">política de privacidade da Apple</a>.
     </p>
 
-    <h3>1.5 Seus direitos</h3>
+    <h3>1.6 Seus direitos</h3>
     <p>
-      Como não mantemos base de dados com seus dados pessoais, pedidos de acesso ou exclusão
-      referem-se ao que está no aparelho: desinstale o app ou limpe os dados do Scrumble nas configurações do iOS.
-      Para outras dúvidas, escreva para
+      Não mantemos cadastro com seus dados pessoais. Para apagar progresso local, desinstale o app
+      ou limpe os dados do Scrumble em Ajustes → Geral → Armazenamento do iPhone.
+      Para dúvidas sobre analytics, compras ou exclusão de dados associados ao uso do app, escreva para
       <a href="mailto:scrumbledada@gmail.com">scrumbledada@gmail.com</a>.
     </p>
 
     <h2>2. Rótulo de Privacidade da App Store (App Privacy)</h2>
     <p>
-      No App Store Connect, declare que o app <strong>não coleta dados</strong> vinculados ao usuário
-      para os fins abaixo. Esta tabela espelha o questionário de privacidade da Apple:
+      No App Store Connect, declare a coleta abaixo (dados <strong>não vinculados à sua identidade</strong>,
+      usados para analytics e diagnóstico, <strong>sem rastreamento</strong> para publicidade).
+      Ajuste os tipos exatos conforme o painel do Firebase no momento da publicação:
     </p>
     <table class="privacy-table">
       <thead>
@@ -141,7 +163,7 @@
         </tr>
         <tr>
           <th scope="row">Informações financeiras</th>
-          <td>Não coletados (sem pagamentos no app)</td>
+          <td>Pagamento só pela Apple (não armazenamos cartão); eventos de compra podem ir ao Firebase de forma agregada</td>
         </tr>
         <tr>
           <th scope="row">Localização</th>
@@ -169,25 +191,29 @@
         </tr>
         <tr>
           <th scope="row">Identificadores</th>
-          <td>Não coletados pelo desenvolvedor</td>
+          <td>ID de instalação / dispositivo anônimo via Firebase (não vinculado ao seu nome ou e-mail)</td>
         </tr>
         <tr>
           <th scope="row">Compras</th>
-          <td>Não coletadas pelo app (sem IAP)</td>
+          <td>Histórico de compras no app tratado pela Apple; o app pode registrar eventos de IAP concluído (tipo de item, não dados de pagamento)</td>
         </tr>
         <tr>
-          <th scope="row">Dados de uso / diagnóstico</th>
-          <td>Não enviados a terceiros pelo Scrumble</td>
+          <th scope="row">Dados de uso</th>
+          <td>Sim — interação com o app (fases, sessões, desbloqueios) via Firebase Analytics, finalidade: melhorias</td>
+        </tr>
+        <tr>
+          <th scope="row">Dados de diagnóstico</th>
+          <td>Sim — crashes e desempenho via Firebase Crashlytics / Performance</td>
         </tr>
         <tr>
           <th scope="row">Rastreamento</th>
-          <td>Não — sem “Tracking” conforme ATT</td>
+          <td>Não — sem “Tracking” para anúncios entre apps (ATT)</td>
         </tr>
       </tbody>
     </table>
     <p>
-      <strong>Práticas de privacidade no Connect:</strong> marque que os dados não são usados para rastrear,
-      não são vinculados à identidade do usuário e não são coletados para fins de publicidade ou analytics de terceiros.
+      <strong>Práticas no Connect:</strong> para cada tipo acima, indique finalidade “Analytics” e/ou “App Functionality”,
+      “Não vinculado a você” e “Não usado para rastrear”. Não marque “Publicidade de terceiros”.
     </p>
 
     <h2>3. Classificação etária e conteúdo</h2>
@@ -206,7 +232,7 @@
       <li>Medo / temas assustadores: mínimo ou inexistente.</li>
       <li>Conteúdo sexual ou nudez: nenhum.</li>
       <li>Apostas, competições com dinheiro real ou loot boxes pagas: nenhum.</li>
-      <li>Compras não supervisionadas: nenhuma (app sem compras no app).</li>
+      <li>Compras no app: <strong>sim</strong> — moedas e personagens opcionais; pagamento via Apple (controle parental do iOS recomendado).</li>
       <li>Acesso web irrestrito dentro do app: não.</li>
       <li>Chat ou comunicação entre usuários: não.</li>
       <li>Uso de redes sociais: não integrado.</li>
@@ -228,13 +254,23 @@
       <a href="mailto:scrumbledada@gmail.com">scrumbledada@gmail.com</a> com detalhes para análise e remoção, se aplicável.
     </p>
 
-    <h2>5. Monetização e modelo do app</h2>
+    <h2>5. Compras no app e monetização</h2>
+    <p>
+      O Scrumble pode ser baixado conforme o preço na App Store. Dentro do jogo existem
+      <strong>compras opcionais</strong> processadas exclusivamente pela Apple:
+    </p>
     <ul>
-      <li><strong>Preço:</strong> conforme definido na App Store (sem assinatura obrigatória descrita nesta política).</li>
-      <li><strong>Compras no app (IAP):</strong> nenhuma na versão coberta por esta página.</li>
-      <li><strong>Assinaturas:</strong> nenhuma.</li>
+      <li><strong>Moedas virtuais</strong> — para obter dicas durante as fases;</li>
+      <li><strong>Personagens</strong> — desbloqueio ou compra de heróis disponíveis na loja do jogo.</li>
+    </ul>
+    <p>
+      Moedas e itens digitais <strong>não têm valor em dinheiro real fora do app</strong> e não são reembolsáveis
+      pelo desenvolvedor (reembolsos seguem a política da Apple). Não há assinatura recorrente obrigatória para jogar.
+    </p>
+    <ul>
+      <li><strong>Assinaturas:</strong> nenhuma descrita nesta política.</li>
       <li><strong>Publicidade:</strong> nenhuma (sem banners, vídeos recompensados ou redes de anúncios).</li>
-      <li><strong>Moeda virtual paga com dinheiro real:</strong> não.</li>
+      <li><strong>Loot boxes aleatórias pagas:</strong> não — compras são por itens definidos na loja.</li>
     </ul>
 
     <h2>6. Permissões e recursos do sistema</h2>
@@ -246,8 +282,10 @@
 
     <h2>7. Crianças e conformidade</h2>
     <p>
-      O app é adequado ao público geral e à classificação 4+. Não coletamos dados pessoais de crianças
-      nem direcionamos marketing a menores de 13 anos. Sem perfis de criança ou “modo kids” com coleta extra de dados.
+      O app é adequado ao público geral e à classificação 4+. Não pedimos dados pessoais de crianças.
+      Em dispositivos compartilhados, recomendamos ativar
+      <strong>Compras dentro do app</strong> com senha ou
+      <strong>Tempo de Uso</strong> no iOS para evitar compras não autorizadas.
     </p>
 
     <h2>8. Segurança e atualizações</h2>
@@ -257,15 +295,54 @@
       O uso continuado após alterações constitui aceitação da política revisada.
     </p>
 
-    <h2>9. Informações gerais para a ficha da App Store</h2>
-    <ul>
-      <li><strong>Nome:</strong> Scrumble</li>
-      <li><strong>Categoria sugerida:</strong> Jogos → Palavras / Quebra-cabeça</li>
-      <li><strong>Plataforma:</strong> iPhone (e iPad, se compatível)</li>
-      <li><strong>Idiomas do app:</strong> Português, Inglês, Francês</li>
-      <li><strong>URL de suporte / privacidade:</strong> esta página (<code>privacy.html</code> no site oficial)</li>
-      <li><strong>E-mail de suporte:</strong> <a href="mailto:scrumbledada@gmail.com">scrumbledada@gmail.com</a></li>
-    </ul>
+    <h2>9. Perguntas frequentes</h2>
+
+    <h3>Preciso criar conta ou informar meus dados?</h3>
+    <p>
+      Não. Você joga sem cadastro, sem login e sem informar nome, e-mail ou telefone no Scrumble.
+    </p>
+
+    <h3>Vocês vendem minhas informações?</h3>
+    <p>
+      Não. Usamos estatísticas anônimas (Firebase) só para corrigir bugs e melhorar o jogo — nunca para vender dados ou exibir anúncios.
+    </p>
+
+    <h3>Por que o app envia dados ao Firebase?</h3>
+    <p>
+      Para saber quando o jogo trava, em quais fases os jogadores têm dificuldade e como melhorar a experiência.
+      Não usamos isso para saber quem você é.
+    </p>
+
+    <h3>O que fica guardado no meu iPhone?</h3>
+    <p>
+      Seu progresso, personagens desbloqueados, moedas e configurações. Tudo isso fica no aparelho até você desinstalar o app ou limpar os dados dele.
+    </p>
+
+    <h3>Como funcionam as compras de moedas e personagens?</h3>
+    <p>
+      São opcionais. O pagamento é feito pela Apple (App Store), com a mesma segurança das outras compras do iPhone.
+      Moedas servem para dicas; personagens podem ser desbloqueados na loja do jogo.
+    </p>
+
+    <h3>Comprei algo por engano. E agora?</h3>
+    <p>
+      Reembolsos são tratados pela Apple, não diretamente por nós.
+      Acesse <a href="https://reportaproblem.apple.com" rel="noopener noreferrer">reportaproblem.apple.com</a>
+      ou o histórico de compras da sua conta Apple.
+    </p>
+
+    <h3>Como apagar meu progresso?</h3>
+    <p>
+      Desinstale o Scrumble ou, em Ajustes → Geral → Armazenamento do iPhone → Scrumble, toque em
+      <strong>Apagar app</strong> ou <strong>Descarregar app</strong> (conforme a versão do iOS).
+    </p>
+
+    <h3>Preciso de ajuda ou tenho uma dúvida sobre privacidade</h3>
+    <p>
+      Escreva para
+      <a href="mailto:scrumbledada@gmail.com">scrumbledada@gmail.com</a>.
+      Respondemos o mais rápido possível em português, inglês ou francês.
+    </p>
 
     <p style="margin-top: 2rem;">
       <a href="index.html" class="btn btn-ghost">← Voltar ao site</a>
