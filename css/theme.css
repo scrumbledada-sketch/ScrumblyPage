@@ -666,6 +666,53 @@ section {
   font-size: 0.9rem;
 }
 
+.privacy-highlight {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface-soft);
+  border: 1px solid rgba(0, 255, 200, 0.25);
+  border-radius: var(--radius);
+}
+
+.privacy-highlight h2 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.privacy-highlight ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.privacy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.privacy-table th,
+.privacy-table td {
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  vertical-align: top;
+}
+
+.privacy-table th {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.privacy-table td {
+  color: var(--text-secondary);
+}
+
+.privacy-table tr:last-child th,
+.privacy-table tr:last-child td {
+  border-bottom: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

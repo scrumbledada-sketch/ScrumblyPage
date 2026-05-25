@@ -54,7 +54,7 @@ git push -u origin main
 | Caminho | Descrição |
 |---------|-----------|
 | `index.html` | Página principal |
-| `privacy.html` | Política de privacidade |
+| `privacy.html` | Privacidade, classificação etária e informações para a App Store |
 | `css/theme.css` | Tema neon (cores do jogo) |
 | `js/i18n.js` | Traduções PT / EN / FR |
 | `js/carousel.js` | Carrosséis |
